@@ -1,3 +1,5 @@
+
+
 // Add your code here
 function submitData(name , email) {
     const info = {name, email}
@@ -9,7 +11,7 @@ function submitData(name , email) {
         },
         body: JSON.stringify(info)
     })
-    .then(res=>res.json()
+    .then(response=>response.json()
       )
       .then(data=> {
           document.body.innerHTML = data.id
